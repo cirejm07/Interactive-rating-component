@@ -114,8 +114,8 @@ button {
 }
 
 button:hover {
-    color: var(--orange);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--orange);
     transition: all ease-out 0.3s;
 }
 

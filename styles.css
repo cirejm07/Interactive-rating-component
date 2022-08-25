@@ -73,10 +73,12 @@ ul {
 
 .btn {
     list-style: none;
+    border: none;
+    outline: none;
 }
 
 .btn button {
-    padding: 0.7rem 1rem;
+    padding: 10px;
     background-color: var(--medium-grey);
     width: 40px;
     height: 40px;
@@ -84,7 +86,8 @@ ul {
     cursor: pointer;
     font-weight: 600;
     color: var(--dark-blue);
-    color: var(--light-grey);
+    border: none;
+    outline: none;
 }
 
 .btn button:hover {
@@ -100,7 +103,7 @@ ul {
     display: none;
 }
 
-button {
+#submit {
     width: 100%;
     padding: 10px;
     border-radius: 50px;
@@ -113,9 +116,9 @@ button {
     color: var(--white);
 }
 
-button:hover {
-    color: var(--white);
-    background-color: var(--orange);
+#submit:hover {
+    color: var(--orange);
+    background-color: var(--white);
     transition: all ease-out 0.3s;
 }
 

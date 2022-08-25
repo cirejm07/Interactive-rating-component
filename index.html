@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+      async
+      defer
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- star logo -->
+      <div class="card-star">
+        <img src="./images/icon-star.svg" alt="star" />
+      </div>
+
+      <!-- title -->
+      <h2 class="card-title">How did we do?</h2>
+
+      <!-- description -->
+      <p class="card-description">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <p class="error"></p>
+      <!-- ratings -->
+      <div class="card-rating">
+        <ul>
+          <li class="btn"><button>1</button></li>
+          <li class="btn"><button>2</button></li>
+          <li class="btn"><button>3</button></li>
+          <li class="btn"><button>4</button></li>
+          <li class="btn"><button>5</button></li>
+        </ul>
+
+        <button class="cta" id="submit">Submit</button>
+      </div>
+    </div>
+
+    <div class="thank-you card hidden">
+      <!-- img container -->
+      <div class="img">
+        <img src="./images/illustration-thank-you.svg" alt="thank-you" />
+      </div>
+
+      <div class="selected">
+        You selected <span id="result"></span> out of 5
+      </div>
+      <h2 class="card-title">Thank you!</h2>
+      <p class="card-description">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- script -->
+    <script src="app.js"></script>
+  </body>
+</html>

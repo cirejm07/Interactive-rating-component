@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#result {
+    color: white;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: auto;
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.card-star {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0.75rem 0.75rem;
+    background-color: var(--medium-grey);
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    color: var(--white);
+}
+
+.card-description {
+    margin: 1rem 0;
+    color: var(--light-grey);
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.btn {
+    list-style: none;
+}
+
+.btn button {
+    padding: 0.7rem 1rem;
+    background-color: var(--medium-grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--dark-blue);
+    color: var(--light-grey);
+}
+
+.btn button:hover {
+    background-color: var(--orange);
+    transition: all ease 0.5s;
+}
+
+.btn button:focus {
+    background-color: var(--white);
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: var(--orange);
+    color: var(--white);
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    transition: all ease-out 0.3s;
+}
+
+
+.thank-you {
+    text-align: center;
+}
+
+
+.selected {
+    margin: 1rem auto;
+    background-color: var(--medium-grey);
+    padding: 8px 7px 5px 7px;
+    width: 50%;
+    border-radius: 5rem;
+}
+
+.selected,
+span {
+    color: var(--orange) !important;
+}
+
+.card,
+.thank-you {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

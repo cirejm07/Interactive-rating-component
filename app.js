@@ -5,18 +5,36 @@ const result = document.getElementById('result')
 const rates = document.querySelectorAll('.btn')
 const el = document.activeElement
 
+let selected;
 
-rates.forEach(item => {
-    item.addEventListener('click', () => {
-        // console.log(item.innerText)
-        result.innerHTML = item.innerText
+rates.forEach((btn) => {
+
+    btn.addEventListener('click', () => {
+    selected = btn.value
+    // console.log(selected);
+    selectRating()
     })
 })
 
+const selectRating = () => {
+
+    rates.forEach(item => {
+        if (item.classList.contains("is-selected"))
+        item.classList.remove("is-selected");
+
+      if(item.textContent === selected){
+            result.innerHTML = selected
+            item.classList.add('is-selected')
+    }
+})
+
+}
+        
+
+
+
 document.getElementById('submit').addEventListener('click', () => {
 
-
-  
 
     if(result.innerHTML === null || result.innerHTML === '' || result.innerHTML === undefined) {
 
